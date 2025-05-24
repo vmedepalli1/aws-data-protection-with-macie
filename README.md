@@ -30,25 +30,26 @@ This project demonstrates how to implement a secure, scalable data protection pi
 ---
 
 ## 📁 Directory Structure
-aws-data-protection-project/
-├── README.md                            # Project overview
-├── docs/
-│   └── project-walkthrough.md           # Step-by-step implementation guide
-├── bucket-policies/
-│   ├── source-bucket-policy.json
-│   └── discovery-results-bucket-policy.json
-├── kms-policy/
-│   └── kms-policy.json
-├── s3-data/
-│   └── pii_phi_test_files/*.csv         # Mock sensitive data files
-├── macie-classification-jobs/
-│   └── job-screenshots/                 # Screenshots or job templates
-├── sns-eventbridge/
-│   └── sns-setup.md
-│   └── eventbridge-rule-pattern.json
-├── findings-samples/         # Sample Macie findings screenshots
 
----
+aws-data-protection-project/
+-README.md                           # Project overview
+-docs/
+   -project-walkthrough.md           # Step-by-step implementation guide
+-policies/                           # bucket polices and KMS policies in json format
+   -source-bucket-policy.json
+   -discovery-results-bucket-policy.json
+   -kms-policy.json
+-s3-data/
+   -sample PII and PHI data files         # Mock sensitive data files
+-macie-classification-jobs.
+   -macie-job-setup.md                             # macie job creation 
+   -job-screenshots
+-sns-eventbridge/
+   -sns-setup.md
+   -eventbridge-rule-pattern.json
+-findings-samples/
+   -findings screenshots
+   
 ---
 
 ## 🧪 How to Test
