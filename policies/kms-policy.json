@@ -1,0 +1,32 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowMacieToUseCMK",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam:: 123456789:root"
+      },
+      "Action": [
+        "kms:GenerateDataKey",
+        "kms:Encrypt",
+        "kms:Decrypt"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "aws:SourceAccount": "123456789"
+        }
+      }
+    },
+    {
+      "Sid": "AllowAdminUserFullAccess",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::123456789:user/admin"
+      },
+      "Action": "kms:*",
+      "Resource": "*"
+    }
+  ]
+}

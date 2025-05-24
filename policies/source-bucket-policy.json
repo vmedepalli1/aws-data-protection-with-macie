@@ -1,0 +1,22 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowMacieToReadSourceData",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam:: 123456789:root"
+      },
+      "Action": [
+        "s3:GetObject",
+        "s3:GetObjectVersion"
+      ],
+      "Resource": "arn:aws:s3:::org-sensitive-data-bucket/*",
+      "Condition": {
+        "StringEquals": {
+          "aws:SourceAccount": "123456789"
+        }
+      }
+    }
+  ]
+}
