@@ -1,0 +1,29 @@
+{
+  "source": [
+    "aws.macie"
+  ],
+  "detail-type": [
+    "Macie Finding"
+  ],
+  "detail": {
+    "severity": {
+      "score": [
+        {
+          "numeric": [
+            ">=",
+            70
+          ]
+        }
+      ]
+    },
+    "classificationDetails": {
+      "result": {
+        "sensitiveData": {
+          "category": [
+            "PERSONALLY_IDENTIFIABLE_INFORMATION"
+          ]
+        }
+      }
+    }
+  }
+}
