@@ -30,31 +30,13 @@ This project demonstrates how to implement a secure, scalable data protection pi
 ---
 
 ## 📁 Directory Structure
-lambda/: All remediation Lambda functions
-eventbridge-rules/: EventBridge rules to trigger Lambda
-cloudformation/: (Optional) IaC template to deploy everything
-sns/: SNS topic + subscription setup docs
-testing/: Steps to simulate GuardDuty findings
-docs/: Full implementation walkthrough
-aws-data-protection-project/
-
-1-README.md                           # Project overview
-2-docs/
-   -project-walkthrough.md           # Step-by-step implementation guide
-3-policies/                           # bucket polices and KMS policies in json format
-   -source-bucket-policy.json
-   -discovery-results-bucket-policy.json
-   -kms-policy.json
-4-s3-data/
-   -sample PII and PHI data files         # Mock sensitive data files
-5-macie-classification-jobs.
-   -macie-job-setup.md                    # macie job creation 
-   -job-screenshots
-6-sns-eventbridge/
-   -sns-setup.md
-   -eventbridge-rule-pattern.json
-7-findings-samples/
-   -findings screenshots
+- `README.md/`: Project overview
+- `docs/`: Step-by-step implementation guide
+- `policies/`: bucket polices and KMS policies in json format
+- `s3-data/`: Mock sensitive data files
+- `macie-classification-jobs/`: macie job creation 
+- `sns-eventbridge/`: SNS setup.md and eventbridge rule pattern json files.
+- `sample findings/`: screenshots of sample macie findings
    
 ---
 
