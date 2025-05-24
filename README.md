@@ -30,8 +30,14 @@ This project demonstrates how to implement a secure, scalable data protection pi
 ---
 
 ## 📁 Directory Structure
-
+lambda/: All remediation Lambda functions
+eventbridge-rules/: EventBridge rules to trigger Lambda
+cloudformation/: (Optional) IaC template to deploy everything
+sns/: SNS topic + subscription setup docs
+testing/: Steps to simulate GuardDuty findings
+docs/: Full implementation walkthrough
 aws-data-protection-project/
+
 1-README.md                           # Project overview
 2-docs/
    -project-walkthrough.md           # Step-by-step implementation guide
