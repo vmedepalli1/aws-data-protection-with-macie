@@ -32,22 +32,22 @@ This project demonstrates how to implement a secure, scalable data protection pi
 ## 📁 Directory Structure
 
 aws-data-protection-project/
--README.md                           # Project overview
--docs/
+1-README.md                           # Project overview
+2-docs/
    -project-walkthrough.md           # Step-by-step implementation guide
--policies/                           # bucket polices and KMS policies in json format
+3-policies/                           # bucket polices and KMS policies in json format
    -source-bucket-policy.json
    -discovery-results-bucket-policy.json
    -kms-policy.json
--s3-data/
+4-s3-data/
    -sample PII and PHI data files         # Mock sensitive data files
--macie-classification-jobs.
-   -macie-job-setup.md                             # macie job creation 
+5-macie-classification-jobs.
+   -macie-job-setup.md                    # macie job creation 
    -job-screenshots
--sns-eventbridge/
+6-sns-eventbridge/
    -sns-setup.md
    -eventbridge-rule-pattern.json
--findings-samples/
+7-findings-samples/
    -findings screenshots
    
 ---
